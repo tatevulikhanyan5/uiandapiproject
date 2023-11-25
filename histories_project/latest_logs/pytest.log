@@ -1,0 +1,3 @@
+00:21:14 INFO Executing: C:\Users\LENOVO\PycharmProjects\pythonProject6\venv\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --output json
+00:21:15 DEBUG Using driver at: C:\Users\LENOVO\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe
+00:21:15 DEBUG Started executable: `C:\Users\LENOVO\.cache\selenium\chromedriver\win32\113.0.5672.63\chromedriver.exe` in a child process with pid: 8264

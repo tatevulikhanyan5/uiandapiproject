@@ -1,0 +1,35 @@
+22:09:06 DEBUG driver not found in PATH, trying Selenium Manager
+22:09:06 DEBUG Executing: C:\Users\LENOVO\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox
+22:09:06 DEBUG Using driver at: C:\Users\LENOVO\.cache\selenium\geckodriver\win64\0.33.0\geckodriver.exe
+22:09:06 DEBUG Started executable: `geckodriver` in a child process with pid: 6472
+22:09:07 DEBUG POST http://localhost:55591/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true, "moz:debuggerAddress": true, "pageLoadStrategy": "normal"}}}
+22:09:07 DEBUG Starting new HTTP connection (1): localhost:55591
+22:09:12 DEBUG http://localhost:55591 "POST /session HTTP/1.1" 200 745
+22:09:12 DEBUG Remote response: status=200 | data={"value":{"sessionId":"6470d850-6756-47ca-9a5c-bafa64696ae2","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"120.0","moz:accessibilityChecks":false,"moz:buildID":"20231116134553","moz:debuggerAddress":"127.0.0.1:55592","moz:geckodriverVersion":"0.33.0","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":19364,"moz:profile":"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\rust_mozprofileCMAp2h","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '745', 'date': 'Sat, 25 Nov 2023 18:09:09 GMT'})
+22:09:12 DEBUG Finished Request
+22:09:12 DEBUG POST http://localhost:55591/session/6470d850-6756-47ca-9a5c-bafa64696ae2/timeouts {"implicit": 10000}
+22:09:12 DEBUG http://localhost:55591 "POST /session/6470d850-6756-47ca-9a5c-bafa64696ae2/timeouts HTTP/1.1" 200 14
+22:09:12 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Sat, 25 Nov 2023 18:09:12 GMT'})
+22:09:12 DEBUG Finished Request
+22:09:12 DEBUG POST http://localhost:55591/session/6470d850-6756-47ca-9a5c-bafa64696ae2/url {"url": "https://www.history.com/topics/christmas/history-of-christmas"}
+22:09:17 DEBUG http://localhost:55591 "POST /session/6470d850-6756-47ca-9a5c-bafa64696ae2/url HTTP/1.1" 200 14
+22:09:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Sat, 25 Nov 2023 18:09:12 GMT'})
+22:09:17 DEBUG Finished Request
+22:09:17 DEBUG POST http://localhost:55591/session/6470d850-6756-47ca-9a5c-bafa64696ae2/element {"using": "link text", "value": "How Did Christmas Start?"}
+22:09:17 DEBUG http://localhost:55591 "POST /session/6470d850-6756-47ca-9a5c-bafa64696ae2/element HTTP/1.1" 200 88
+22:09:17 DEBUG Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"01182494-a76b-4de2-894c-cd5ec79efc52"}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '88', 'date': 'Sat, 25 Nov 2023 18:09:17 GMT'})
+22:09:17 DEBUG Finished Request
+22:09:17 DEBUG POST http://localhost:55591/session/6470d850-6756-47ca-9a5c-bafa64696ae2/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "01182494-a76b-4de2-894c-cd5ec79efc52"}]}
+22:09:17 DEBUG http://localhost:55591 "POST /session/6470d850-6756-47ca-9a5c-bafa64696ae2/execute/sync HTTP/1.1" 200 14
+22:09:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Sat, 25 Nov 2023 18:09:17 GMT'})
+22:09:17 DEBUG Finished Request
+22:09:17 DEBUG POST http://localhost:55591/session/6470d850-6756-47ca-9a5c-bafa64696ae2/element/01182494-a76b-4de2-894c-cd5ec79efc52/click {"id": "01182494-a76b-4de2-894c-cd5ec79efc52"}
+22:09:17 DEBUG http://localhost:55591 "POST /session/6470d850-6756-47ca-9a5c-bafa64696ae2/element/01182494-a76b-4de2-894c-cd5ec79efc52/click HTTP/1.1" 200 14
+22:09:17 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Sat, 25 Nov 2023 18:09:17 GMT'})
+22:09:17 DEBUG Finished Request
+22:09:17 DEBUG Starting new HTTPS connection (1): www.history.com:443
+22:09:18 DEBUG https://www.history.com:443 "GET /editorial/_next/data/UVVwyWLpURTFcD87gpRVi/en/topics.json?path=topics HTTP/1.1" 200 14192
+22:09:18 DEBUG DELETE http://localhost:55591/session/6470d850-6756-47ca-9a5c-bafa64696ae2 {}
+22:09:19 DEBUG http://localhost:55591 "DELETE /session/6470d850-6756-47ca-9a5c-bafa64696ae2 HTTP/1.1" 200 14
+22:09:19 DEBUG Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Sat, 25 Nov 2023 18:09:17 GMT'})
+22:09:19 DEBUG Finished Request
